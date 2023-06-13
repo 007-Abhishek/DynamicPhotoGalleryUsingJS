@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <style media="screen">
+
+      body{
+        background-color:black;
+      }
+
+      h2{
+        color:red;
+        text-align:center;
+      }
+
+      .thumbnails{
+        display:flex;
+        justify-content:center;
+        height:20%;
+        width:100%;
+      }
+
+      .thumbnails img{
+        padding:1%;
+        height:80%;
+        width:12%;
+      }
+
+      .thumbnails img:hover{
+        border:2px solid red;
+      }
+
+      .preview img{
+        padding:3%;
+        height:40%;
+        width:70%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h2>Photo Gallery</h2>
+
+    <div class="thumbnails">
+      <img onmousemove="preview.src=img1.src" src="F:\Study Material\img1.png" name="img1">
+      <img onmousemove="preview.src=img2.src" src="F:\Study Material\img2.png" name="img2">
+      <img onmousemove="preview.src=img3.src" src="F:\Study Material\img3.png" name="img3">
+      <img onmousemove="preview.src=img4.src" src="F:\Study Material\img4.jpg" name="img4">
+      <img onmousemove="preview.src=img5.src" src="F:\Study Material\img5.jpg" name="img5">
+    </div>
+
+    <div class="preview" align="center">
+      <img name="preview" src="F:\Study Material\img1.png">
+    </div>
+
+  </body>
+</html>
